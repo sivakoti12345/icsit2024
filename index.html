@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="viewport" content="width=1024">
+
+<link rel="stylesheet" href="style.css">
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous"
+/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var viewMode = getCookie("view-mode");
+    if(viewMode == "desktop"){
+        viewport.setAttribute('content', 'width=900');
+    }else if (viewMode == "mobile"){
+        viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=5.0,user-scalable=yes');
+    }
+    </script>
+    <title>ICSCIT 2024</title>
+
+<style>
+
+
+.snip1217 {
+font-family: 'Raleway', Arial, sans-serif;
+text-align: center;
+text-transform: uppercase;
+font-weight: 250px;
+letter-spacing: 1px;
+}
+.snip1217 * {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-transition: all 0.35s ease;
+transition: all 0.35s ease;
+}
+.snip1217 li {
+display: inline-block;
+list-style: outside none none;
+margin: 0.5em 0.5em;
+padding: 0;
+}
+.snip1217 a {
+padding: 0.3em 0;
+
+position: relative;
+text-decoration: none;
+display: inline-block;
+}
+.snip1217 a:before,
+.snip1217 a:after {
+height: 3px;
+position: absolute;
+content: '';
+-webkit-transition: all 0.35s ease;
+transition: all 0.35s ease;
+background-color: orange;
+width: 0;
+}
+.snip1217 a:before {
+top: 0;
+left: 0;
+}
+.snip1217 a:after {
+bottom: 0;
+right: 0;
+}
+.snip1217 a:hover:before,
+.snip1217 .current a:before,
+.snip1217 a:hover:after,
+.snip1217 .current a:after {
+width: 100%;
+}
+
+
+
+p{
+
+
+text-align: justify;
+}
+
+a:link{
+  color:#00008B;
+}
+.custom-toggler .navbar-toggler{
+  border-color:yellow;
+}
+     .text{
+       margin-top: 400px;
+       background-color:white;
+
+     }
+     
+     .sized {
+    position: relative;
+    overflow: hidden;
+}
+
+.sized video {
+    width: 100%;
+    display: block;
+}
+
+.text-light {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+        
+        
+
+     .marq{
+       margin-top:80px;
+
+     }
+
+     a:link{
+       color:#00008B;
+     }
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+.snip1217 {
+font-family: 'Raleway', Arial, sans-serif;
+text-align: center;
+text-transform: uppercase;
+font-weight: 250px;
+letter-spacing: 1px;
+}
+.snip1217 * {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-transition: all 0.35s ease;
+transition: all 0.35s ease;
+}
+.snip1217 li {
+display: inline-block;
+list-style: outside none none;
+margin: 0.5em 0.5em;
+padding: 0;
+}
+.snip1217 a {
+padding: 0.3em 0;
+position: relative;
+text-decoration: none;
+display: inline-block;
+}
+.snip1217 a:before,
+.snip1217 a:after {
+height: 3px;
+position: absolute;
+content: '';
+-webkit-transition: all 0.35s ease;
+transition: all 0.35s ease;
+background-color: orange;
+width: 0;
+}
+.snip1217 a:before {
+top: 0;
+left: 0;
+}
+.snip1217 a:after {
+bottom: 0;
+right: 0;
+}
+.snip1217 a:hover:before,
+.snip1217 .current a:before,
+.snip1217 a:hover:after,
+.snip1217 .current a:after {
+width: 100%;
+}
+#track{
+  margin-top: 100px;
+}
+
+#container
+{
+margin-top: 100px;
+margin-left:100px;
+}
+a:link{
+  color:#00008B;
+}
+.list{
+  font-size: 20px;
+  font-weight: 10px;
+  color:#E5E4E2;
+}
+h4{
+  color: yellow;
+}
+p{
+  font-size: 20px;
+  text-align: center;
+}
+font{
+  font-size: 25px;
+}
+
+</style>
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  .navbar {
+      overflow: hidden;
+      background-color: #00008B;
+  }
+
+  .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 10px 6px 2px 6px;
+      text-decoration: none;
+	  font-size:17px;
+  }
+
+  .dropdown {
+      float: left;
+      overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+  }
+
+  .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+  }
+
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+
+  .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+  }
+
+  .dropdown-content a:hover {
+      background-color: #ddd;
+  }
+
+  @media screen and (max-width: 600px) {
+      .navbar a, .dropdown .dropbtn {
+          display: none;
+      }
+      .navbar a.icon {
+          float: right;
+          display: block;
+      }
+  }
+
+  @media screen and (max-width: 600px) {
+      .navbar.responsive {
+          position: relative;
+      }
+      .navbar.responsive a.icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+      }
+      .navbar.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+      }
+      .navbar.responsive .dropdown {
+          float: none;
+      }
+      .navbar.responsive .dropdown-content {
+          position: relative;
+      }
+      .navbar.responsive .dropdown .dropbtn {
+          display: block;
+          width: 100%;
+          text-align: left;
+      }
+	  
+  }
+  .top {
+  justify-content:center;
+  text-align:center;
+  position:relative;
+  margin: 0 auto; 
+  }
+  
+  @keyframes blink {
+  0% {
+    color: red;
+  }
+  50% {
+    color: pink;
+  }
+  100% {
+    color: green;
+  }
+}
+
+
+</style>
+</head>
+<body style="background-color: #3d3da4;">
+  <header  style="background-color: #3d3da4; text-align: center; " >
+    <div style="display: block;  justify-content: space-between; margin-bottom:5px;">
+         
+		<div style="padding:0px;">
+			<img src="img/sastra.png" id="logo" alt="logo" style="width: 20%; height: 18%; background-color: white; margin:30px 10px 5px 10px;" /> 
+			<h3 style="color:white;">International Conference on Secure Computing and Intelligent Technologies</h3>
+		</div>
+	<div style="display:flex; text-align:center; justify-content:center; position:relative;">
+		
+		<div class="top" style="margin-top:100px;">
+		 <font style="  font-size: 25px; color: yellow;"><b>Brochure : </b>
+      <button  class="btn btn-light">
+            <a href="ICSCIT24.pdf" target="_blank"> <i class="bi bi-download"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+              <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+            </svg> Download</a>
+      </button></font>
+		</div>
+		<div class="top">
+			<p style="color: white; text-align: center; font-size: 20px;"><font style="color:white; font-size: 20px;"> 
+                      Department of Computer Science and Engineering <br>
+                      Srinivasa Ramanujan Centre <br>
+                      SASTRA DEEMED TO BE UNIVERSITY 
+       </font></p></h3><font class="badge badge-light" style= "color:black; font-size: 15px; padding:10px; border-radius:30px"> April 19 & 20, 2024 | Kumbakonam, Tamil Nadu, India  </font>
+		</div>
+		<div class="top">
+			<h4 class="badge badge-light"  style="animation:blink 1s infinite; font-size: 22px; margin-top:100px;">HYBRID mode</h4>
+		</div>
+	</div>
+    <!-- <div style="padding-right:75px;">    -->
+  
+       <!-- <h3 style="color: white; font-family: georgia; font-size: 24px; margin-top:10px;"> -->
+        <!-- International Conference on Secure Computing and Intelligent Technologies <br> -->
+             <!-- <font style="color: white; font-family:georgia;font-size: 21px;">(ICSCIT 2024)</font> -->
+       <!-- <p style="color: white; text-align: center; font-size: 20px;"><font style="color:white; font-size: 20px;"> -->
+                     <!-- Department of Computer Science and Engineering <br> -->
+                     <!-- Srinivasa Ramanujan Centre <br> -->
+                     <!-- SASTRA DEEMED TO BE UNIVERSITY  -->
+      <!-- </font></p></h3>	 -->
+      
+ 
+  
+  <!-- &emsp; -->
+  <!-- <span class="badge badge-light" style="padding: 14px; border-radius: 70px; text-align: center; display: inline-block; margin-bottom: 5px;"> -->
+         <!-- <font style= "color:black; font-size: 15px;"> April 19 & 20, 2024 | Kumbakonam, Tamil Nadu, India  </font> -->
+  <!-- </span> -->
+  
+   
+    
+   <!-- </div> -->
+  
+  <!--<img src="img/logo.png" alt="logo" id="logo2" style="width: 5%; height: 5%;margin:21px 10px 5px 10px;" />-->   
+    </div>
+   
+   </header>
+
+ 
+  <!--<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="no1.html">Committee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cfp.html">Call for Papers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="keynote.html">Speakers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="submission.html">Submission</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="publication.html">Publication</a>
+                </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="dates.html"> Important Dates</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registration.html">Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="venue.html">Venue</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>-->
+
+<div class="navbar" id="myNavbar">
+  <a class="nav-link" href="index.html">Home</a>
+  <a class="nav-link" href="no1.html">Committee</a>
+  <a class="nav-link" href="cfp.html">Call for Papers</a>
+  <a class="nav-link" href="keynote.html">Speakers</a>
+  <a class="nav-link" href="submission.html">Submission</a>
+  <a class="nav-link" href="publication.html">Publication</a>
+  <a class="nav-link" href="dates.html"> Important Dates</a>
+  <a class="nav-link" href="registration.html">Registration</a>
+  <a class="nav-link" href="venue.html">Venue & Contact</a>
+  <!--<a class="nav-link" href="contact.html">Contact</a>-->
+  <!--<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>-->
+</div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myNavbar");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+    }
+</script>
+ 
+<script>
+  var currentLocation = window.location.href;
+
+  var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+  navLinks.forEach(function (link) {
+      if (link.href === currentLocation) {
+          link.parentElement.classList.add('active');
+      }
+  });
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+
+  <!-- section 1 -->
+  <div class="sized">
+    <video loop autoplay muted width="1560" height="auto">
+        <source src="videos/srcvideo.mp4" type="video/mp4">
+      </video>
+      
+
+<div class="text-light p-0">
+<div style="height:200px;"></div>
+</div>
+</div>
+ 
+<div class="text" style = "background-color: #3d3da4; margin-top: 50px;" >
+  <center>
+    <!-- <font style="  font-size: 25px; color: yellow;"><b>Brochure : </b> -->
+      <!-- <button  class="btn btn-light"> -->
+            <!-- <a href="ICSCIT24.pdf" target="_blank"> <i class="bi bi-download"></i> -->
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16"> -->
+              <!-- <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/> -->
+              <!-- <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/> -->
+            <!-- </svg> Download</a> -->
+      <!-- </button></font> -->
+          
+               <b> 
+     &emsp;&emsp;<h4 style="color:yellow; "><b><u>Important Dates</b></u></h4>
+        <b>  
+          <center>
+            <div style="text-align: center;">
+        <font style="color: yellow; font-size: 25px;"> Submission of Full Paper <font style="margin-left: 20px;">:</font></font><font style="color: white;  " > 20 February, 2024</font><br>
+
+          <font style="color: yellow; font-size: 25px;">Acceptance   Notification <font style="margin-left: 5px;">:</font></font><font  style="color:white; "> 01 March, 2024 </font><br>
+          <font style="color: yellow; font-size: 25px;">Registration Fee Payment  <font style="margin-left: 5px;">:</font> </font><font  style="color:white; margin-right: 1em;"> 15 March, 2024 </font><br>
+             </b> <br>
+          <p style="text-align: center;  color:white; font-size: 20px;"><b><font style="color:yellow;">Email:</font> icscit24@sastra.ac.in</b></p> 
+          </div>
+          </center>
+            <h4 class="my-4">
+             <span class="badge badge-primary" style="padding: 15px; border-radius:7px;     font-family: georgia;
+             "
+               >Conference will be conducted in HYBRID (online & offline) mode</span
+             >
+           </h4>
+         </center>
+         
+<div id="align">
+<h4 style ="  color:yellow; text-align: center;"> <b>ABOUT - ICSCIT 2024<b></h4>
+
+<hr size="12" width="40%" color:"#000080">
+<div class="my-5 section1 container" >
+
+  <div class="container-fluid text-center my-4">
+    <p style=" color:white; text-align: justify; margin-left: 50px;
+    margin-right: 50px; " >
+The aim of ICSCIT’24 is to share the latest research findings,
+methodologies and advancements in secure computing and
+intelligent technologies. The conference highlight and showcase
+innovative technologies, tools and methodologies that contribute
+to the advancement of secure computing and intelligent
+technologies. These aims collectively contribute to the overall
+success and impact of the conference, fostering a collaborative
+and forward-thinking community dedicated to advancing the field
+of secure computing and intelligent technologies.     </p>
+      <div> <br>
+      <div class="container-fluid text-center my-4">
+
+      <h4 style ="  color:yellow"> <b>ABOUT SASTRA <b></h4>
+      <hr size="12" width="30%" color:"#000080">
+      <div class="my-5 section1 container">
+
+        <div class="container-fluid text-center my-4">
+          <p style="  color:white; text-align: justify" >
+        A sprawling campus with a vibrant population of students, faculty and state-of-the art laboratories has made SASTRA a landmark in the educational map of India. SASTRA has reached national standing in terms of academic performance, co-curricular and extra-curricular activities and, the development and commitment to social service. SASTRA offers various Undergraduate, Postgraduate and Doctoral Programmes in Engineering, Arts, Science, Law and Management. The excellence of the academic programmes offered by the University is replicated in the ratings awarded by National Assessment and Accreditation Council (NAAC) which has reaccredited SASTRA with a maximum grade of A++ with score 3.76/4.00 in cycle IV, retaining the status of the Category I University.
+      </p>
+      </div>
+      </div>
+
+      <div class="container-fluid text-center my-4">
+
+      <h4 style =" color:yellow"> <b>ABOUT SRINIVASA RAMANUJAN CENTRE<b></h4>
+      <hr size="12" width="40%" color:"#000080">
+      <div class="my-5 section1 container">
+
+      <div >
+                  <p style=" color:white; text-align: justify" >
+                    SASTRA established Srinivasa Ramanujan Centre in 2002 as a
+                    fitting tribute to the great mathematician, Srinivasa Ramanujan
+                    who spent most of his formative years in the temple town of
+                    Kumbakonam. This Centre also houses a museum called
+                    “House of Ramanujan Mathematics”.</p>
+                    <p style="color: white; text-align: justify;">
+                      SASTRA purchased and renovated the house where Srinivasa
+Ramanujan lived and spent his childhood days. The house and
+the museum have been dedicated to the nation as international
+monuments by His Excellency, Dr. A.P.J. Abdul Kalam, then
+President of India.
+                    </p>
+      </div>
+      </div>
+      </div>
+      <div class="container-fluid text-center my-4">
+
+    
+      </div>
+      </div>
+      </div>
+
+      <div class="container-fluid text-center my-4">
+
+      <h4 style ="  color:yellow"> <b>ABOUT THE DEPARTMENT<b></h4>
+      <hr size="12" width="30%" color:"#000080">
+      <div class="my-5 section1 container">
+
+      <div >
+                  <p style="  color:white; text-align: justify; margin-right: 10px; margin-left: 10px;" >
+                    The Department of Computer Science and Engineering was
+                    established in 2002. The department has 51 faculty members
+                    with rich expertise in Industrial, Research and Academics. The
+                    department offers four programs B.Tech.(CSE), B.C.A., B.Sc.
+                    (CS)., and M.Sc. (CS). The primary objective of the department
+                    is to educate, train, and develop world-class professionals and
+                    academicians. Equipped with state-of-the-art centralized
+                    laboratories featuring the latest configurations and software
+                    tools, the Department of Computer Science & Engineering is
+                    actively involved in pioneering research in areas such as
+                    Machine Learning, Information Security, Artificial Intelligence,
+                    Image Processing, Data Mining, Data Analytics and Internet of
+                    Things. The department has numerous publications to its credit
+                    which are listed in SCI, SCI-E, Web of Science, SCOPUS, etc.</p>
+      </div>
+      </div>
+      </div>
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+</body> 
+
+ <footer><p>© SASTRA DEEMED UNIVERSITY, All Rights Reserved. 2023</p></footer> 
+
+</html>
